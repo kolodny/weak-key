@@ -1,0 +1,28 @@
+{
+  "name": "weak-key",
+  "version": "1.0.0",
+  "description": "get a unique key for an object ( mainly for react's key={} )",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc mocha",
+    "test-travis": "nyc mocha && nyc report --reporter=lcov",
+    "test": "mocha"
+  },
+  "keywords": [
+    "key",
+    "object",
+    "react",
+    "array"
+  ],
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^2.4.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "expect": "^1.20.1",
+    "mocha": "^2.5.3",
+    "nyc": "^6.4.4"
+  }
+}
