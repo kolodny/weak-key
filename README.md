@@ -1,7 +1,7 @@
 weak-key
 ===
 
-Get a unique key for an object ( mainly for react's key={} ) 
+Get a unique key for an object ( mainly for react's key={} )
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
@@ -15,6 +15,19 @@ npm install --save weak-key
 ```
 
 ### usage
+
+```js
+var key = require('weak-key');
+const todos = [{ text: 'write module' }, { text: 'writes tests' }, { text: 'publish' }];
+todos.map(key); // ['weak-key-0', 'weak-key-1', 'weak-key-2'];
+todos.reverse().map(key); // ['weak-key-2', 'weak-key-1', 'weak-key-0'];
+[{}, {}].map(key); // ['weak-key-3', 'weak-key-4'];
+```
+
+This only works on things that `typeof thing === 'object'` so you can't use it on primitive types (numbers, strings, ...)
+which makes it great to use for [React's `key={}`](https://facebook.github.io/react/docs/multiple-components.html#dynamic-children)
+
+### usage with react
 
 ```js
 import key from 'weak-key';
