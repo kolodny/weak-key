@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "get a unique key for an object ( mainly for react's key={} )",
   "main": "index.js",
+  "repository": "kolodny/weak-key",
   "scripts": {
     "coverage": "nyc mocha",
     "test-travis": "nyc mocha && nyc report --reporter=lcov",
