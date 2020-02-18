@@ -1,6 +1,6 @@
 {
   "name": "weak-key",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get a unique key for an object ( mainly for react's key={} )",
   "main": "index.js",
   "repository": "kolodny/weak-key",
