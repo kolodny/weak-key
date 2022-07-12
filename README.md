@@ -31,7 +31,7 @@ which makes it great to use for [React's `key={}`](https://facebook.github.io/re
 
 ```js
 import key from 'weak-key';
-export default function Todo(items) {
+export default function Todo({ items }) {
   return (
     <ul>
       {
