@@ -17,9 +17,6 @@
   ],
   "author": "Moshe Kolodny",
   "license": "MIT",
-  "dependencies": {
-    "core-js": "^2.4.0"
-  },
   "devDependencies": {
     "coveralls": "^2.11.9",
     "expect": "^1.20.1",
