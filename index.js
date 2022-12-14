@@ -1,4 +1,4 @@
-var WeakMap = global.WeakMap || require('core-js/library/fn/weak-map');
+var WeakMap = global.WeakMap || require('core-js/stable/weak-map');
 var map = new WeakMap();
 var index = 0;
 
